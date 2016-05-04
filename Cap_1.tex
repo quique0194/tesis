@@ -1,0 +1,67 @@
+\chapter{Introducción}
+
+La robocup tiene como objectivo construir un equipo robótico capaz de jugar fútbol con el campeón mundial y ganar en el año 2050. Con este fin se tienen varias categorias de competición que retan a los investigadores de todo el mundo para ir mejorando poco a poco los algoritmos y técnicas utilizadas en la construcción de robots.\\
+
+Una de esas categorías es la simulación de fútbol 2D, que como su nombre lo indica es una simulación. La ventaja de una simulación es que abstrae todos los detalles de construcción del hardware de los robots y permite a los investigadores centrarse en los algoritmos, en la estrategia. Gracias a esto, esta categoría sirve como una cama de pruebas muy interesante para probar algoritmos de inteligencia artificial nuevos.\\
+
+Recientemente se anunció la noticia de que finalmente se había creado una inteligencia artificial capaz de ganarle al campeón mundial de Go en una ronda de 5 partidas, donde quedaron 4 contra 1. El algoritmo que logró esta hazaña combina 2 grandes ramas de la inteligencia artificial: el aprendizaje por refuerzo y el aprendizaje profundo. Con este mismo algoritmo también se creó una inteligencia artificial capaz de aprender a jugar 49 juegos de Atari teniendo como entrada solamente los píxeles de la pantalla y la puntuación.\\
+
+El presente trabajo aplica este mismo algoritmo llamado \ac{DQN} a la creación de un equipo de fútbol que juegue en la categoría de Robocup simulación de fútbol 2D. Se añade además la complejidad de como hacer que varias de estas redes interactúen en un sistema multiagente como es un equipo de fútbol.\\
+
+
+\section{Motivación y Contexto}
+
+La robocup tiene como objectivo construir un equipo robótico capaz de jugar fútbol con el campeón mundial y ganar en el año 2050. Con este fin se tienen varias categorias de competición que retan a los investigadores de todo el mundo para ir mejorando poco a poco los algoritmos y técnicas utilizadas en la construcción de robots.\\
+
+Una de esas categorías es la simulación de fútbol 2D, que como su nombre lo indica es una simulación. La ventaja de una simulación es que abstrae todos los detalles de construcción del hardware de los robots y permite a los investigadores centrarse en los algoritmos, en la estrategia. Gracias a esto, esta categoría sirve como una cama de pruebas muy interesante para probar algoritmos de inteligencia artificial nuevos.\\
+
+Recientemente se anunció la noticia de que finalmente se había creado una inteligencia artificial capaz de ganarle al campeón mundial de Go en una ronda de 5 partidas, donde quedaron 4 contra 1. El algoritmo que logró esta hazaña combina 2 grandes ramas de la inteligencia artificial: el aprendizaje por refuerzo y el aprendizaje profundo. Con este mismo algoritmo también se creó una inteligencia artificial capaz de aprender a jugar 49 juegos de Atari teniendo como entrada solamente los píxeles de la pantalla y la puntuación.\\
+
+El presente trabajo aplica este mismo algoritmo llamado \ac{DQN} a la creación de un equipo de fútbol que juegue en la categoría de Robocup simulación de fútbol 2D. Se añade además la complejidad de como hacer que varias de estas redes interactúen en un sistema multiagente como es un equipo de fútbol.\\
+
+
+\section{Planteamiento del Problema}
+
+El fútbol de robots simulado es un problema que se puede modelar con un \ac{MDP} con número de estados y acciones virtualmente infinitos. El problema es implementar un algoritmo que sea capaz de tomar decisiones en este contexto y jugar de la mejor manera posible, teniendo en cuenta que cada jugador es un agente independiente y con capacidad de comunicación limitada.\\
+
+
+\section{Objetivos}
+
+Aplicar el algoritmo \ac{DQN} en la construcción de un equipo de fútbol simulado de robots 2D.
+
+
+\subsection{Objetivos Específicos}
+
+\begin{itemize}
+\item Modelar el problema como un \ac{MDP} con sus respectivos estados y acciones
+\item Establecer un protocolo de comunicación entre los jugadores
+\item Analizar el desempeño del equipo contra otros equipos campeones en ligas pasadas
+\end{itemize}
+
+
+\section{Organización de la tesis}
+
+En el capítulo 2 tenemos el marco teórico, en el cual se hablará de dos temas: el aprendizaje por refuerzo, y el aprendizaje profundo. En cada uno de ellos se describirá la historia, evolución y aplicación de estas técnicas.
+
+En el capítulo 3 hablaremos del estado del arte de Deep Q-Learning, una técnica muy reciente que combina las dos técnicas anteriores en una sola. Describiremos el funcionamiento de esta técnica así como sus aplicaciones más recientes.
+
+En el capítulo 4 se hablará de la propuesta, que consiste básicamente en cómo se va a utilizar el algoritmo de Deep Q-Learning para jugar al fútbol en un entorno simulado.
+
+En el capítulo 5, se darán detalles de la implementación, tales como el funcionamiento del simulador y la representación de los estados y acciones en el código, así como el modelos de comunicación.
+
+Finalmente en el capítulo 6, mostraremos los resultados del experimento haciendo jugar al equipo creado contra los campeones de ligas pasadas varios partidos.
+
+
+\section{Cronograma}
+
+A continuación el cronograma. Para facilitar la lectura, se emplean números romanos que representan la semana del mes en la cual se realizará el trabajo. Por ejemplo ``Mayo I'' se refiere a la primera semana de Mayo, mientras que ``Junio IV'' se refiere a la cuarta semana de Junio.\\
+
+Se pretende terminar el proyecto 2 semanas antes de la fecha de entrega final, osea, los primeros días de Julio. De esta manera hay un margen para poder solucionar cualquier error, inconveniente o retraso que se presente.\\
+
+\begin{itemize}
+\item Marco Teórico: Abril IV, Mayo I, II
+\item Estado del arte: Abril IV, Mayo I, II
+\item Propuesta: Abril IV, Mayo I, II
+\item Implementación: Mayo III, IV, Junio I
+\item Pruebas y resultados: Junio II, III, IV
+\end{itemize}

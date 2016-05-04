@@ -1,0 +1,232 @@
+%\NeedsTeXFormat{LaTeX2e}[01/06/2002]
+%\ProvidesClass{ucsptesis}[19/03/2007 v1.0 UCSP Formato de tesis para la UCSP]
+
+%\DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
+%\ProcessOptions*                  
+%\LoadClass[a4paper,openany,12pt]{book}
+
+%*****************************************************************************
+%Definiendo Paquetes
+%*****************************************************************************
+
+%*****************************************************************************
+%Diseñando Carátula
+%*****************************************************************************
+\renewcommand{\maketitle}
+{
+    \thispagestyle{empty}
+    
+    \begin{figure}[h]
+    \center
+    \includegraphics[scale = 0.25]{ucsp}
+    \end{figure}
+
+    \begin{center}
+        \vspace*{1cm}
+        {\Large \textbf \@title \par}
+        \vspace*{3cm}
+        {\large \textbf \@author}\\
+        \vspace*{\stretch{1}}
+        \textbf{Orientador: \@orientador}
+        \vspace*{\stretch{1}}
+    \end{center}        
+        \presentar        
+        \vspace*{\stretch{1}}
+    \begin{center}
+        \textbf{UCSP - Universidad Católica San Pablo}\\
+        \textbf{ $\,$\mes\ de\ \the\year$\,$}
+    \end{center}
+    \pagebreak
+    \dedicatoria
+}
+
+
+%***************************************************************************** 
+%Diseñando presentación 
+%***************************************************************************** 
+\newcommand{\presentacion}{\gdef\@presentacion}
+\presentacion{Tesis profesional presentada al Programa
+Profesional de Ingeniería Informática como parte de los requisitos
+para obtener el Título Profesional de Ingeniero Informático.}
+
+\newcommand{\presentar}
+{
+    \begin{flushright}
+        \begin{tabular}{p{10cm}}
+            \normalsize\it\@presentacion
+        \end{tabular}
+    \end{flushright}
+}
+
+
+%***************************************************************************** 
+%Diseñando Orientador 
+%***************************************************************************** 
+\newcommand{\orientador}{\gdef\@orientador}
+
+
+%*****************************************************************************
+%Diseñando Dedicatoria
+%*****************************************************************************
+\newcommand{\dedicado}{\gdef\@dedicado}
+\dedicado{}
+
+\newcommand{\dedicatoria}
+{
+    \begin{flushright}
+        \vspace*{2.6cm}
+        \begin{tabular}{p{7cm}}
+            \normalsize\it\@dedicado
+        \end{tabular}
+    \end{flushright}
+    \thispagestyle{empty}
+}
+
+
+%*****************************************************************************
+%Diseñando Agradecimientos
+%*****************************************************************************
+\newenvironment{agradecimientos}
+{
+    \chapter*{Agradecimientos}
+    \hrule
+    \vspace*{0.5cm}
+    \parindent 0cm
+    \narrower
+    \vfill
+    \thispagestyle{empty}
+}
+{
+    \vfill
+    \vfill
+    \vfill
+    \clearpage
+}
+
+
+%*****************************************************************************
+%Diseñando Abstract
+%*****************************************************************************
+\newenvironment{abstract}
+{
+    \chapter*{Abstract}
+    \hrule
+    \vspace*{0.5cm}
+    \narrower
+    \vfill
+    \thispagestyle{empty}
+}
+{
+    \vfill
+    \vfill
+    \vfill
+    \clearpage
+}
+
+
+%*****************************************************************************
+%Diseñando Resumen
+%*****************************************************************************
+\newenvironment{resumen}
+{
+    \chapter*{Resumen}
+    \hrule
+    \vspace*{0.5cm}
+    \narrower
+    \vfill
+    \thispagestyle{empty}
+}
+{
+    \vfill
+    \vfill
+    \vfill
+    \clearpage
+}
+
+
+%*****************************************************************************
+%Diseñando los Índices
+%*****************************************************************************
+%\newif \if@listtab
+%\newif \if@listfig
+
+%\newcommand{\itb}{\@listtabtrue}
+%\newcommand{\ifg}{\@listfigtrue}
+%
+%\newcommand{\indice}[1]
+%{    
+%    #1
+%    \pagenumbering{arabic}
+%    
+%    \tableofcontents
+%    
+%    \if@listtab
+%        \listoftables
+%    \fi
+%    
+%    \if@listfig
+%        \listoffigures
+%    \fi
+%}
+
+
+%*****************************************************************************
+%Diseñando Encabezado y Pie de Página
+%*****************************************************************************
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO]{\leftmark}
+\fancyhead[RE]{\rightmark}
+\fancyfoot[L]{Ingeniería Informática - UCSP}
+\fancyfoot[R]{\thepage}
+\renewcommand{\chaptermark}[1]
+    {\markboth{\MakeUppercase{\chaptername}\ \thechapter. #1}{}}
+\renewcommand{\sectionmark}[1]
+    {\markright{\thesection. #1}}
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+
+%*****************************************************************************
+%Diseñando Párrafos
+%*****************************************************************************
+\parindent 1cm
+\parskip 0.4cm
+
+
+%*****************************************************************************
+%Diseñando la Bibliografía
+%*****************************************************************************
+\newcommand{\bibliografia}[1]
+{
+    
+}
+
+
+%*****************************************************************************
+%Mensajes de Error
+%*****************************************************************************
+\renewcommand{\@title}{\ClassError{UCSP}{Falta especificar \string\title{}}
+ {Use el comando \string\title{} en el preambulo para especificar \MessageBreak
+  el titulo de su tesis.}}
+\renewcommand{\title}[1]{\gdef\@title{#1}}
+
+\renewcommand{\@author}{\ClassError{UCSP}{Falta especificar \string\author{}}
+ {Use el comando \string\author{} en el preambulo para especificar su nombre.}}
+\renewcommand{\author}[1]{\gdef\@author{#1}}
+
+\renewcommand{\@dedicado}{\ClassError{UCSP}{Falta especificar \string\dedicado{}}
+ {Use el comando \string\dedicado{} en el preambulo para especificar su dedicatoria.}}
+\renewcommand{\dedicado}[1]{\gdef\@dedicado{#1}}
+
+
+%*****************************************************************************
+%Nombre de mes
+%*****************************************************************************
+\newcommand{\mes}{\ifcase\month\or Enero\or Febrero\or
+      Marzo\or Abril\or Mayo\or Junio\or Julio\or Agosto\or Septiembre\or
+      Octubre\or Noviembre\or Diciembre\fi}
+
+
+%*****************************************************************************
+\endinput

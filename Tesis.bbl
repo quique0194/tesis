@@ -1,0 +1,15 @@
+\begin{thebibliography}{}
+
+\bibitem[Galante, 2001]{Galante01}
+Galante, R. d.~M. (2001).
+\newblock {\em Evolução de Esquemas em Bancos de Dados Orientados a Objetos com
+  o emprego de versões}.
+\newblock PhD thesis, Instituto de Informática-UFRGS.
+
+\bibitem[Mateos et~al., 2000]{Mateos00}
+Mateos, G., García~M., J., and Ortín~I., M. (2000).
+\newblock Inclusión de vistas en \textsc{ODMG}.
+\newblock {\em Jornadas de Ingeniería del Software y Bases de Datos {(JISBD
+  2000)}}, pages 383--395.
+
+\end{thebibliography}
