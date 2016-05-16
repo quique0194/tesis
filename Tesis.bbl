@@ -1,15 +1,90 @@
 \begin{thebibliography}{}
 
-\bibitem[Galante, 2001]{Galante01}
-Galante, R. d.~M. (2001).
-\newblock {\em Evolução de Esquemas em Bancos de Dados Orientados a Objetos com
-  o emprego de versões}.
-\newblock PhD thesis, Instituto de Informática-UFRGS.
+\bibitem[Akiyama and Nakashima, 2013]{akiyama2013helios}
+Akiyama, H. and Nakashima, T. (2013).
+\newblock Helios base: An open source package for the robocup soccer 2d
+  simulation.
+\newblock In {\em RoboCup 2013: Robot World Cup XVII}, pages 528--535.
+  Springer.
 
-\bibitem[Mateos et~al., 2000]{Mateos00}
-Mateos, G., García~M., J., and Ortín~I., M. (2000).
-\newblock Inclusión de vistas en \textsc{ODMG}.
-\newblock {\em Jornadas de Ingeniería del Software y Bases de Datos {(JISBD
-  2000)}}, pages 383--395.
+\bibitem[BARTO, 2004]{barto2004j}
+BARTO, M. (2004).
+\newblock J. 4 supervised actor-critic reinforcement learning.
+\newblock {\em Handbook of learning and approximate dynamic programming},
+  2:359.
+
+\bibitem[Bengio et~al., 2007]{bengio2007greedy}
+Bengio, Y., Lamblin, P., Popovici, D., Larochelle, H., et~al. (2007).
+\newblock Greedy layer-wise training of deep networks.
+\newblock {\em Advances in neural information processing systems}, 19:153.
+
+\bibitem[Claus and Boutilier, 1998]{claus1998dynamics}
+Claus, C. and Boutilier, C. (1998).
+\newblock The dynamics of reinforcement learning in cooperative multiagent
+  systems.
+\newblock In {\em AAAI/IAAI}, pages 746--752.
+
+\bibitem[Erhan et~al., 2010]{erhan2010does}
+Erhan, D., Bengio, Y., Courville, A., Manzagol, P.-A., Vincent, P., and Bengio,
+  S. (2010).
+\newblock Why does unsupervised pre-training help deep learning?
+\newblock {\em The Journal of Machine Learning Research}, 11:625--660.
+
+\bibitem[Hinton, 2010]{hinton2010practical}
+Hinton, G. (2010).
+\newblock A practical guide to training restricted boltzmann machines.
+\newblock {\em Momentum}, 9(1):926.
+
+\bibitem[Hinton and Salakhutdinov, 2006]{hinton2006reducing}
+Hinton, G.~E. and Salakhutdinov, R.~R. (2006).
+\newblock Reducing the dimensionality of data with neural networks.
+\newblock {\em Science}, 313(5786):504--507.
+
+\bibitem[Lillicrap et~al., 2015]{lillicrap2015continuous}
+Lillicrap, T.~P., Hunt, J.~J., Pritzel, A., Heess, N., Erez, T., Tassa, Y.,
+  Silver, D., and Wierstra, D. (2015).
+\newblock Continuous control with deep reinforcement learning.
+\newblock {\em arXiv preprint arXiv:1509.02971}.
+
+\bibitem[Mnih et~al., 2015]{mnih2015human}
+Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A.~A., Veness, J., Bellemare,
+  M.~G., Graves, A., Riedmiller, M., Fidjeland, A.~K., Ostrovski, G., et~al.
+  (2015).
+\newblock Human-level control through deep reinforcement learning.
+\newblock {\em Nature}, 518(7540):529--533.
+
+\bibitem[Precup et~al., 2001]{precup2001off}
+Precup, D., Sutton, R.~S., and Dasgupta, S. (2001).
+\newblock Off-policy temporal-difference learning with function approximation.
+\newblock In {\em ICML}, pages 417--424.
+
+\bibitem[Silver et~al., 2014]{silver2014deterministic}
+Silver, D., Lever, G., Heess, N., Degris, T., Wierstra, D., and Riedmiller, M.
+  (2014).
+\newblock Deterministic policy gradient algorithms.
+\newblock In {\em ICML}.
+
+\bibitem[Sutton and Barto, 1998]{sutton1998reinforcement}
+Sutton, R.~S. and Barto, A.~G. (1998).
+\newblock {\em Reinforcement learning: An introduction}.
+\newblock MIT press.
+
+\bibitem[Sutton et~al., 1999]{sutton1999policy}
+Sutton, R.~S., McAllester, D.~A., Singh, S.~P., Mansour, Y., et~al. (1999).
+\newblock Policy gradient methods for reinforcement learning with function
+  approximation.
+\newblock In {\em NIPS}, volume~99, pages 1057--1063.
+
+\bibitem[Van Der~Wal, 1978]{van1978discounted}
+Van Der~Wal, J. (1978).
+\newblock Discounted markov games: generalized policy iteration method.
+\newblock {\em Journal of Optimization Theory and Applications},
+  25(1):125--138.
+
+\bibitem[Yang, 2010]{yang2010multi}
+Yang, Z.~R. (2010).
+\newblock Multi-layer perceptron.
+\newblock In {\em Machine Learning Approaches To Bioinformatics}, pages
+  133--153. World Scientific.
 
 \end{thebibliography}

@@ -1,6 +1,17 @@
 \select@language {spanish}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Banderas en el campo de juego}}{17}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces GPI}}{21}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces MLP}}{24}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitectura de la RBM}}{25}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Pila de RBM}}{25}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Resultados con DQN}}{32}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces DQN vs humano experto}}{33}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Resultados de \ac {DPG}}}{34}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultados de \ac {DPG} modificado}}{34}
 \addvspace {10\p@ }

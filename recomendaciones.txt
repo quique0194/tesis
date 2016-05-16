@@ -1,0 +1,6 @@
+vecindad en matriz de RL
+RL an introduction: sutton y barto
+poner problema antes que lo demas
+
+temas pendientes:
+- gradiente descendente

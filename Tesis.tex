@@ -1,6 +1,9 @@
 \documentclass[a4paper,openany,12pt]{book}
-\usepackage{graphicx}
 \usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
 \usepackage{fancyhdr}
 \usepackage{ae}
 \usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
@@ -8,46 +11,42 @@
 \usepackage{hlundef}
 \usepackage{tesis}
 
-\title{Deep Q-Learning aplicado a la creación de un equipo de fútbol de agentes simulados 2D}
+\title{Deep Q-Learning multiagente aplicado a la creaciÃ³n de un equipo de fÃºtbol de agentes simulados 2D}
 
-\author{José Enrique Carrillo Pino}
+\author{JosÃ© Enrique Carrillo Pino}
 
 \orientador{Prof Dr. Dennis Barrios Aranibar}
 
-\dedicado{Aquí deberás colocar a
-quien va dedicada tu tesis por ejemplo: A Dios, por todo lo que me
-ha dado, a todos los profesores por sus enseñanzas y algunos
-amigos.}
+\dedicado{Dedico este trabajo a mis padres, por todo el esfuerzo que han hecho en sacarme adelante y a mis profesores por todas sus enseÃ±anzas.}
 
 \begin{document}
-\maketitle %Compone la carátula y la dedicatoria
+\maketitle %Compone la carÃ¡tula y la dedicatoria
 
-\include{abreviaturas}
+\include{Abreviaturas}
 \input{Agradecimientos} %Inserta los agradecimientos
 \input{Resumen} %Inserta el resumen
 \input{Abstract} %Inserta el abstract
 
-\tableofcontents %Inserta el índice general
-\listoftables %Inserta el índice de cuadros
-\listoffigures %Inserta el índice de figuras
+\tableofcontents %Inserta el Ã­ndice general
+\listoftables %Inserta el Ã­ndice de cuadros
+\listoffigures %Inserta el Ã­ndice de figuras
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%   En esta parte deberas incluir los archivos de tu tesis   %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{Cap_1} %Inserta el capítulo 1
-\input{Cap_2} %Inserta el capítulo 2
-\input{Cap_3} %Inserta el capítulo 3
-\input{Cap_4} %Inserta el capítulo 4
-\input{Cap_5} %Inserta el capítulo 5
-\input{Cap_6} %Inserta el capítulo 6
-\input{Cap_7} %Inserta el capítulo 7
-\input{conclusiones} %Inserta las conclusiones
+\input{Introduccion}
+\input{Problema}
+\input{Marco_Teorico}
+\input{Estado_Arte}
+\input{Propuesta}
+\input{Resultados}
+\input{Conclusiones}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \bibliographystyle{apalike}
 \bibliography{Bibliog}
-\addcontentsline{toc}{chapter}{Bibliografía}
+\addcontentsline{toc}{chapter}{BibliografÃ­a}
 
 \end{document}

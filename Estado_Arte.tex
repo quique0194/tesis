@@ -1,0 +1,28 @@
+\chapter{Estado del Arte}
+
+\section{Agent2D}
+\label{sec:agent2d}
+Agent2D es un equipo de fútbol de muestra para la categoría de simulación 2D de la RoboCup. Forma parte del código base de HELIOS, un equipo que viene participando en competiciones de la RoboCup desde el año 2000. Ha ganado 2 veces el primer puesto y 2 veces el segundo puesto, y se ha mantenido entre los 3 primeros desde el 2007.
+
+La primera vez que se publico el código base de HELIOS fue el 2006. Desde entonces está en constante mantenimiento. Este código es el más popular desde el 2012 y ha sido usado por un amplio número de equipos para participar por primera vez. En \cite{akiyama2013helios} podemos encontrar información más detallada sobre este programa.
+
+
+\section{Deep Q Network}
+
+Esta arquitectura aparece por primera vez en \cite{mnih2015human}. La idea básica es usar una Red Neuronal Profunda para aproximar la función de valor de las acciones. Con esta nueva arquitectura es posible aprender directamente de la información sensorial cruda. En este trabajo se usa una \ac{CNN} para leer directamente los píxeles de la pantalla de 49 juegos de atari. Sólo con esta información y el score se logra que el agente aprenda a jugar con desempeño sobrehumano en más de la mitad de los juegos.
+
+Como usar aproximadores no lineales en \ac{RL} ha probado ser inestable, se aplican dos ideas clave:
+
+\begin{itemize}
+\item Usar un mecanismo biológicamente inspirado llamado replay de experiencias
+\item Los valores objetivos son actualizados periodicamente, reduciendo así correlaciones 
+\end{itemize}
+
+A pesar de que con \ac{DQN} se pueden resolver problemas con estados de alta dimensionalidad; sólo puedo manejar acciones discretas y de baja dimensionalidad. Una solución obvia para adaptar \ac{DQN} a espacios de acciones continuas sería discretizar las acciones. Sin embargo esto tiene muchas limitaciones, especialmente la maldición de la dimensionalidad. Por ejemplo, en un sistema con 7 grados de libertad (como el brazo humano) con la discretización más gruesa $a_i \in {-k, 0, k}$, obtenemos un espacion de acciones con dimensionalidad $3^7=2187$.
+
+
+\section{Deep Reinforcement Learning con espacio de acciones continuas}
+
+En \cite{silver2014deterministic} se propone un algoritmo eficiente de \ac{RL} que puede ser aplicado con un espacio de acciones continuas. Este algoritmo usa la gradiente de una política determinista en un modelo actor-critic que permite usar otra política estocástica para lograr una exploración adecuada.
+
+En \cite{lillicrap2015continuous} se hace lo mismo que en el trabajo anterior, pero mejora la estabilida del sistema utilizando los métodos de \ac{DQN}. Propone un algoritmo actor-critic libre de modelo, off-policy que utiliza aproximadores de funciones profundos para aprender políticas en espacios de acción continuos de varias dimensiones.

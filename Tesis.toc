@@ -1,20 +1,45 @@
 \select@language {spanish}
-\contentsline {chapter}{\numberline {1}Introducción}{11}
-\contentsline {section}{\numberline {1.1}Motivación y Contexto}{12}
-\contentsline {section}{\numberline {1.2}Planteamiento del Problema}{12}
-\contentsline {section}{\numberline {1.3}Objetivos}{12}
-\contentsline {subsection}{\numberline {1.3.1}Objetivos Específicos}{13}
-\contentsline {section}{\numberline {1.4}Organización de la tesis}{13}
-\contentsline {section}{\numberline {1.5}Cronograma}{13}
-\contentsline {chapter}{\numberline {2}Nombre del Capítulo II}{15}
-\contentsline {section}{\numberline {2.1}Sección 1 del Capítulo II}{15}
-\contentsline {subsection}{\numberline {2.1.1}Sub Sección}{15}
-\contentsline {subsubsection}{Sub sub sección}{15}
-\contentsline {section}{\numberline {2.2}Consideraciones Finales}{15}
-\contentsline {chapter}{\numberline {3}Propuesta}{16}
-\contentsline {chapter}{\numberline {4}Pruebas y Resultados}{17}
-\contentsline {chapter}{\numberline {5}Conclusiones y Trabajos Futuros}{18}
-\contentsline {section}{\numberline {5.1}Problemas encontrados}{18}
-\contentsline {section}{\numberline {5.2}Recomendaciones}{18}
-\contentsline {section}{\numberline {5.3}Trabajos futuros}{18}
-\contentsline {chapter}{Bibliografía}{19}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{12}
+\contentsline {section}{\numberline {1.1}Motivaci\IeC {\'o}n y Contexto}{12}
+\contentsline {section}{\numberline {1.2}Planteamiento del Problema}{13}
+\contentsline {section}{\numberline {1.3}Objetivos}{13}
+\contentsline {subsection}{\numberline {1.3.1}Objetivos Espec\IeC {\'\i }ficos}{13}
+\contentsline {section}{\numberline {1.4}Organizaci\IeC {\'o}n de la tesis}{13}
+\contentsline {chapter}{\numberline {2}El problema}{15}
+\contentsline {section}{\numberline {2.1}Servidor}{15}
+\contentsline {subsection}{\numberline {2.1.1}Reglas de juego}{15}
+\contentsline {subsection}{\numberline {2.1.2}Mensajes al cliente}{16}
+\contentsline {section}{\numberline {2.2}Cliente}{16}
+\contentsline {subsection}{\numberline {2.2.1}Mensajes entre los jugadores}{16}
+\contentsline {subsection}{\numberline {2.2.2}Percepci\IeC {\'o}n del ambiente}{17}
+\contentsline {section}{\numberline {2.3}Consideraciones finales}{18}
+\contentsline {chapter}{\numberline {3}Marco te\IeC {\'o}rico}{19}
+\contentsline {section}{\numberline {3.1}Reinforcement Learning}{19}
+\contentsline {subsection}{\numberline {3.1.1}Retorno esperado}{20}
+\contentsline {subsection}{\numberline {3.1.2}Generalized Policy Iteration}{20}
+\contentsline {subsection}{\numberline {3.1.3}On-policy vs Off-policy}{21}
+\contentsline {subsection}{\numberline {3.1.4}M\IeC {\'e}todo actor-critic}{21}
+\contentsline {subsection}{\numberline {3.1.5}Pol\IeC {\'\i }ticas parametrizadas}{22}
+\contentsline {subsection}{\numberline {3.1.6}M\IeC {\'e}todos de Gradiente de Pol\IeC {\'\i }tica}{22}
+\contentsline {section}{\numberline {3.2}Sistemas multiagente}{23}
+\contentsline {subsection}{\numberline {3.2.1}Aprendizaje en sistemas multiagente}{23}
+\contentsline {section}{\numberline {3.3}Redes Neuronales y Deep Learning}{23}
+\contentsline {subsection}{\numberline {3.3.1}Multilayer perceptron}{23}
+\contentsline {subsection}{\numberline {3.3.2}Restricted Boltzman Machine}{24}
+\contentsline {subsection}{\numberline {3.3.3}Deep Belief Network}{25}
+\contentsline {section}{\numberline {3.4}Consideraciones Finales}{26}
+\contentsline {chapter}{\numberline {4}Estado del Arte}{27}
+\contentsline {section}{\numberline {4.1}Agent2D}{27}
+\contentsline {section}{\numberline {4.2}Deep Q Network}{27}
+\contentsline {section}{\numberline {4.3}Deep Reinforcement Learning con espacio de acciones continuas}{28}
+\contentsline {chapter}{\numberline {5}Propuesta}{29}
+\contentsline {section}{\numberline {5.1}Definici\IeC {\'o}n de Estados, Acciones y Recompensas}{29}
+\contentsline {section}{\numberline {5.2}Par\IeC {\'a}metros de la \ac {DQN}}{30}
+\contentsline {chapter}{\numberline {6}Pruebas y Resultados}{31}
+\contentsline {section}{\numberline {6.1}Pruebas y resultados en trabajos similares}{31}
+\contentsline {section}{\numberline {6.2}Planificaci\IeC {\'o}n de pruebas}{31}
+\contentsline {chapter}{\numberline {7}Conclusiones y Trabajos Futuros}{35}
+\contentsline {section}{\numberline {7.1}Problemas encontrados}{35}
+\contentsline {section}{\numberline {7.2}Recomendaciones}{35}
+\contentsline {section}{\numberline {7.3}Trabajos futuros}{36}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{38}
