@@ -36,7 +36,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{Introduccion}
-%\input{Problema}
+\input{Problema}
 \input{Marco_Teorico}
 \input{Estado_Arte}
 \input{Propuesta}

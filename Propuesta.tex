@@ -1,49 +1,12 @@
 \chapter{Propuesta}
 
-Se propone la creación de un equipo de fútbol para la categoría de simulación 2D de la RoboCup. Este equipo se implementará usando el algoritmo de aprendizaje por refuerzo \ac{DQN} y se espera que su desempeño sea por lo menos mejor que el equipo de muestra Agent2D que se explicó en la sección \ref{sec:agent2d}. La definición de los estados y acciones, así como la función de recompensa se encuentran en la siguiente sección.
-
-\section{Definición de Estados, Acciones y Recompensas}
-
-Los estados tendrán la siguiente información:
+Aplicar Deep Q Learning al aprendizaje de jugadas de futbol de bajo nivel.
 
 \begin{itemize}
-\item $X_{jugador} \in [-54; 54]$ 
-\item $Y_{jugador} \in [-32; 32]$
-\item $dist_{balon} \in \mathbb{R}$
-\item $dir_{balon} \in [-180; 180]$
-\item Estamina $ \in [0; 4000]$
-\item Esfuerzo $ \in [0; 1]$
-\item Monto de velocidad $ \in \mathbb{R}^+$
-\item Dirección de la velocidad $ \in [-180; 180]$
+\item Se tiene un simulador hecho a la medida
+\item Se necesita un sistema de scoring que le de recompensas al agente por pasos intermedios, como coger el balon, patearlo, perderlo, sacar el balon fuera del campo y hacer un gol.
+\item Es necesario un aprendizaje icremental, donde la primera etapa, la jugaria con un adversario que no se mueve, luego con un adversario aleatorio y finalmente con una estrategia de arbol de decision
+\item Tambien podemos escalar este aprendizaje en un 1 vs 1, 2 vs 2 y finalmente un 3 vs 3
+\item Para tener una idea de que tan bien se desempeña el algoritmo, lo compararemos con el desempeño de un jugador humano
+\item Se utilizaran 2 modelos de aprendizaje, el primero un deep q learning con una mlp por detras, y el segundo un deep q learning con una red convolucional por detras, que aprendera directamente de los frames generados por el juego
 \end{itemize}
-
-La información de los jugadores al rededor del agente se proporcionará haciendo un particionamiento de los 360º al rededor del agente en 10 porciones de 36º. A cada porción de 36º le corresponde una sección del estado:
-
-\begin{itemize}
-\item Equipo $ \in \{0, 1, 2\}$
-\item Distancia $ \in \mathbb{R}^+$
-\item Dirección del cuerpo $ \in [-180; 180]$
-\item Dirección de la cabeza $ \in [-90; 90]$
-\item Visto por última vez $ \in [0; 30]$
-\end{itemize}
-
-Se tienen 10 de estos bloques en un estado, uno por cada sección de 36º al rededor del jugador. Con esto, cada estado esta formado por 58 variables continuas, con lo cual queda justificado el uso de redes neuronales profundas.
-
-Para las acciones también se tienen variables continuas, sin embargo se discretizarán para que puedan ser utilizadas con \ac{DQN}. Las posibles acciones son 34 en total:
-
-\begin{itemize}
-\item Girar $ \in \{-50, -20, -10, 10, 20, 50\}$
-\item Acelerar $ \in \{10, 20, 50, 100\}$
-\item Patear $ \in \{10, 20, 50, 100\} \times \{-50, -20, -10, 10, 20, 50\}$
-\end{itemize}
-
-También se necesita una función de recompensas, que en nuestro caso, funcionará en los siguientes casos:
-
-\begin{itemize}
-\item Gol a favor: +1
-\item Gol en contra: -1
-\end{itemize}
-
-\section{Parámetros de la \ac{DQN}}
-
-Para modelar la función de valor se utilizará una \ac{DBN} cuya entrada serán los estados definidos en la sección anterior. La salida de esta red neuronal profunda será una neurona de salida por cada una de las 34 acciones. En cada neurona de salida se tendrá el valor de la acción que corresponde a esa neurona. Se tendrá 2 capas ocultas con 50 neuronas en cada una. Además hay varios parámetros que aún falta definir, pero que se definirán en tiempo de implementación, como el tamaño de la memoria de replay, el factor de descuento, el tamaño de los batches, etc.
